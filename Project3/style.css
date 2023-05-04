@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height:59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+.logo{
+    margin: 10px 45px;
+}
+.logo img{
+    
+    height: 59px;
+    margin: 3px 6px;
+}
+.logo img:hover{
+    cursor: pointer;
+}
+ ul {
+   display: flex;
+ } 
+   #navbar::before{
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+   }
+
+ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+ul li a{
+    padding: 4px 22px;
+    color: #fff;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+ul li a:hover{
+   background-color: #fff;
+   color: black;
+}
+/* home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    height: 450px;
+    top: 0px;
+    align-items: center;
+
+}
+
+
+#home::before{
+    content: "";
+    background: url('img/italian-cuisine-2378729__340.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.9; */
+}
+h1{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+    color: #fff;
+}
+.h.primary{
+    padding: 12px;
+    
+     
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: #fff;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: cadetblue;
+    color: black;
+    margin: 17px;
+    cursor: pointer;
+}
+/* Service section */
+#services{
+    display: flex;
+    margin: 34px;
+    
+
+}
+#services .box{
+   border: 2px solid brown;
+   padding: 34px;
+   margin: 2px 55px;
+   border-radius: 28px;
+   background: #f2f2f2;
+   margin-bottom: 20px;
+ display: flexbox;
+}
+#services .box img{
+    height: 160px;
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+    
+}
+/* Clients section  */
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-section{
+    height: 344px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+
+}
+#client-section::before{
+    position: absolute;
+    content: " ";
+    background: url('img/download.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#clients img{
+    height: 124px;
+}
+#clients img:hover{
+    cursor: pointer;
+
+}   
+.client-item{
+    padding: 34px;
+}
+
+/* Contact section */
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url('img/italian-cuisine-2378729__340.jpg') no-repeat center center/cover;
+
+}
+footer{
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+ #contact-box{
+   /* display:flex;
+   */
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+   left: 0px;
+   width: 50%;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
